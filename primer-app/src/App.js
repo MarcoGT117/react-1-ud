@@ -10,12 +10,16 @@ function App() {
     age : 30,
     favColor : "Azul"
   }
+
+  const saludarUser = (name)=> {
+    alert(`Hola ${name}`)
+}
   
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      <Saludar userInfo={user} />
+      <Saludar userInfo={user} saludarUser={saludarUser}/>
       </header>
     </div>
   );
