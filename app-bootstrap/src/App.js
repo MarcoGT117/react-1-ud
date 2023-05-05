@@ -1,5 +1,6 @@
 import "./App.css";
-import { Button, Accordion, Card } from "react-bootstrap";
+import { Button, Accordion } from "react-bootstrap";
+import {ReactComponent as ReactIcon} from "./assets/react.svg"
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
       >
         Click
       </Button>{" "}
-      return (
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Abreme</Accordion.Header>
@@ -20,7 +20,9 @@ function App() {
         </Accordion.Item>
         <Accordion.Item eventKey="1">
           <Accordion.Header>Abreme x2</Accordion.Header>
-          <Accordion.Body>Mundo</Accordion.Body>
+          <Accordion.Body>Mundo
+            <ReactIcon/>
+          </Accordion.Body>
         </Accordion.Item>
       </Accordion>
     </div>
