@@ -7,10 +7,12 @@ import React from "react";
 // Lo siguiente es la funcion que renderiza el componente, por lo general esta funcion tiene el mismo nombre del componente
 
 function HolaMundo() {
+    let name = "Marco Gonzalez"
+
   return (
     <div>
       <h1>Hola mundo!</h1>
-      <h2>Marco Gonzalez</h2>
+      <h2>{name}</h2>
     </div>
   );
 }
