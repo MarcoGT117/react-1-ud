@@ -5,12 +5,17 @@ import './App.css';
 import Saludar from './components/Saludar';
 
 function App() {
+  const user = {
+    name : "Juan Perez",
+    age : 30,
+    favColor : "Azul"
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      <Saludar name="Marco Gonzalez" age="26" />
-      <Saludar name="Juan Perez" age="30" />
+      <Saludar userInfo={user} />
       </header>
     </div>
   );
