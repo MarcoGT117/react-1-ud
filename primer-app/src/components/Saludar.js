@@ -1,16 +1,20 @@
 import { React } from "react";
 
-export default function Saludar(props) {
+function Saludar(props) {
     // Destructuracion
     const { userInfo, saludarUser }= props;
-    const { name, age, favColor } = userInfo;
+    // Añadido valores por default
+    const { name = "anonimo", age ="", favColor="color" } = userInfo;
 
     console.log(userInfo);
 
+    // Render
     return(
         <div>
             <p>Hola {userInfo.name}, tiene {age} años, su color favorito es el {favColor}</p>
-            <button onClick={()=>saludarUser(name)}>Saludar</button>
+            <button onClick={()=>saludarUser(name, age)}>Saludar</button>
         </div>
     )
 }
+
+export default Saludar;

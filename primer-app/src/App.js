@@ -11,8 +11,8 @@ function App() {
     favColor : "Azul"
   }
 
-  const saludarUser = (name)=> {
-    alert(`Hola ${name}`)
+  const saludarUser = (name, age)=> {
+    alert(`Hola ${name}, tienes ${age} años.`)
 }
   
   return (
